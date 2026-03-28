@@ -1,0 +1,21 @@
+
+[19:07:14 UTC] [INFO] Starting CE image metadata processing | Context: {"total_attachments":66,"offset":"60","chunk_size":10}
+[19:07:15 UTC] [INFO] Processing CE image batch | Context: {"batch_size":6,"offset":"60"}
+[19:07:15 UTC] [INFO] Generating attachment metadata | Context: {"attachment_id":1895,"file":"demo-screenshot.jpg"}
+[19:07:16 UTC] [INFO] Generating attachment metadata | Context: {"attachment_id":3087,"file":"default.png"}
+[19:07:16 UTC] [INFO] Generating attachment metadata | Context: {"attachment_id":3091,"file":"fashion-designer-spring-summer-collection-cover-img-222x300-1.jpg"}
+[19:07:16 UTC] [INFO] Generating attachment metadata | Context: {"attachment_id":3092,"file":"fashion-designer-spring-summer-collection-cover-img-759x1024-1.jpg"}
+[19:07:17 UTC] [INFO] Generating attachment metadata | Context: {"attachment_id":3093,"file":"fashion-designer-resort-collection-cover-img-222x300-1.jpg"}
+[19:07:17 UTC] [INFO] Generating attachment metadata | Context: {"attachment_id":3094,"file":"fashion-designer-resort-collection-cover-img-759x1024-1.jpg"}
+[19:07:18 UTC] [SUCCESS] CE image batch processing completed | Context: {"successful":6,"errors":0,"new_offset":70}
+[19:07:18 UTC] [INFO] Starting CE image metadata processing | Context: {"total_attachments":66,"offset":70,"chunk_size":10}
+[19:07:18 UTC] [INFO] Processing CE image batch | Context: {"batch_size":0,"offset":70}
+[19:07:18 UTC] [SUCCESS] CE image batch processing completed | Context: {"successful":0,"errors":0,"new_offset":80}
+[19:07:18 UTC] [INFO] ---- Processing Images from Widgets -----
+[19:07:18 UTC] [INFO] ---- Processing Contact Form Mapping from Text Widgets -----
+[19:07:18 UTC] [INFO] ---- Processing batch process for Customizer start ----
+[19:07:18 UTC] [INFO] ---- Processing batch process for Customizer done ----
+[21:55:14 UTC] [INFO] Checking if plugin directory clearing is needed
+[22:02:01 UTC] [INFO] Checking if plugin directory clearing is needed
+[00:12:58 UTC] [INFO] Checking if plugin directory clearing is needed
+[08:10:17 UTC] [INFO] Checking if plugin directory clearing is needed

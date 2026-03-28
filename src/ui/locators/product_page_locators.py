@@ -1,0 +1,15 @@
+from selenium.webdriver.common.by import By
+class ProductPageLocators:
+    PRODUCT_PAGE_ADD_TO_CART_BUTTON = By.CSS_SELECTOR,'button.single_add_to_cart_button.button.alt'
+    PRODUCT_PAGE_ADDED_TO_CART_MESSAGE = By.CSS_SELECTOR,'div.woocommerce-notices-wrapper > div'
+    PRODUCT_PAGE_PRODUCT_TITLE = By.CSS_SELECTOR,'h1.product_title.entry-title'
+    PRODUCT_PAGE_VIEW_CART_BUTTON = By.CSS_SELECTOR,'div.woocommerce-notices-wrapper > div > a'
+    PRODUCT_PAGE_PRICE = By.CSS_SELECTOR,'div.summary.entry-summary > p > span > bdi'
+    PRODUCT_PAGE_REVIEW_BUTTON = By.CSS_SELECTOR,'#tab-title-reviews > a'
+    PRODUCT_PAGE_STARS = By.CSS_SELECTOR,'a.star-5'
+    COMMENT_LINE = By.ID,'comment'
+    REVIEW_NAME_LINE = By.ID,'author'
+    REVIEW_EMAIL_LINE = By.ID,'email'
+    REVIEW_SUBMIT_BUTTON = By.ID,'submit'
+    AWAITING_APPROVAL_MESSAGE = By.CSS_SELECTOR,'em.woocommerce-review__awaiting-approval'
+    REVIEW_MESSAGE = By.CSS_SELECTOR,'div.description'

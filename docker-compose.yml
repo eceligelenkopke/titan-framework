@@ -1,0 +1,67 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: titan_mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: local
+    ports:
+      - "10016:3306"
+    volumes:
+      - ./wp_data/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  wordpress:
+    image: wordpress:latest
+    container_name: titan_wordpress
+    restart: always
+    depends_on:
+      - db
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: root
+      WORDPRESS_DB_NAME: local
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_HOME', 'http://' . $$_SERVER['HTTP_HOST'] . '/');
+        define('WP_SITEURL', 'http://' . $$_SERVER['HTTP_HOST'] . '/');
+    ports:
+      - "10018:80"
+    volumes:
+      - ./wp_data/wp-content:/var/www/html/wp-content
+
+  selenium-hub:
+    image: selenium/hub:latest
+    container_name: selenium-hub
+    ports:
+      - "4442:4442"
+      - "4443:4443"
+      - "4444:4444"
+
+  chrome:
+    image: selenium/node-chrome:latest
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+
+  tests:
+    build: .
+    container_name: titan_tests
+    depends_on:
+      - wordpress
+      - chrome
+    environment:
+      - BROWSER=chrome
+      - BASE_URL=http://wordpress/
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_USER=root
+      - DB_PASSWORD=root
+      - DB_NAME=local
+    env_file:
+      - .env
+    volumes:
+      - ./allure_reports:/app/allure_reports

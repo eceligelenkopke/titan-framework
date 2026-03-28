@@ -1,0 +1,15 @@
+from selenium.webdriver.common.by import By
+class CheckoutPageLocators:
+    BILLING_FIRST_NAME = By.ID,'billing_first_name'
+    BILLING_LAST_NAME = By.ID,'billing_last_name'
+    STREET_ADDRESS_LINE_ONE = By.ID,'billing_address_1'
+    STREET_ADDRESS_LINE_TWO = By.ID,'billing_address_2'
+    TOWN_CITY_LINE = By.ID,'billing_city'
+    ZIP_CODE_LINE = By.ID,'billing_postcode'
+    BILLING_EMAIL_LINE = By.ID,'billing_email'
+    PLACE_ORDER_BUTTON = By.ID,'place_order'
+    ORDER_RECEIVED_MESSAGE = By.CSS_SELECTOR,'#post-1003 > div > div > div > p'
+    BLOCK_UI_LAYER = By.CSS_SELECTOR,'.blockUI.blockOverlay'
+    ORDER_NUMBER = By.CSS_SELECTOR,'.order > strong'
+    OUT_OF_STOCK_MESSAGE = By.CSS_SELECTOR,'.woocommerce-NoticeGroup-checkout > div > ul > li'
+    CHECKOUT_PRICE_VALUE = By.CSS_SELECTOR,'li.woocommerce-order-overview__total.total > strong > span > bdi'

@@ -1,0 +1,70 @@
+
+[18:50:30 UTC] [SUCCESS] {"required_plugins":{"active":[{"slug":"woocommerce","init":"woocommerce\/woocommerce.php","name":"WooCommerce"},{"slug":"woocommerce-payments","init":"woocommerce-payments\/woocommerce-payments.php","name":"WooPayments"}],"inactive":[],"notinstalled":[{"slug":"cartflows","init":"cartflows\/cartflows.php","name":"CartFlows","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=cartflows&_wpnonce=33d1f85855"},{"slug":"ultimate-addons-for-gutenberg","init":"ultimate-addons-for-gutenberg\/ultimate-addons-for-gutenberg.php","name":"Spectra","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=ultimate-addons-for-gutenberg&_wpnonce=6260be7572"},{"slug":"sureforms","init":"sureforms\/sureforms.php","name":"SureForms","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=sureforms&_wpnonce=3298eab038"},{"slug":"variation-swatches-woo","init":"variation-swatches-woo\/variation-swatches-woo.php","name":"Variation Swatches for WooCommerce","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=variation-swatches-woo&_wpnonce=22cbe19457"},{"slug":"woo-cart-abandonment-recovery","init":"woo-cart-abandonment-recovery\/woo-cart-abandonment-recovery.php","name":"WooCommerce Cart Abandonment Recovery","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=woo-cart-abandonment-recovery&_wpnonce=8968fce33e"}]},"third_party_required_plugins":[],"update_avilable_plugins":[],"incompatible_plugins":[],"error":false} | Context: {"required_plugins":{"active":[{"slug":"woocommerce","init":"woocommerce\/woocommerce.php","name":"WooCommerce"},{"slug":"woocommerce-payments","init":"woocommerce-payments\/woocommerce-payments.php","name":"WooPayments"}],"inactive":[],"notinstalled":[{"slug":"cartflows","init":"cartflows\/cartflows.php","name":"CartFlows","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=cartflows&_wpnonce=33d1f85855"},{"slug":"ultimate-addons-for-gutenberg","init":"ultimate-addons-for-gutenberg\/ultimate-addons-for-gutenberg.php","name":"Spectra","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=ultimate-addons-for-gutenberg&_wpnonce=6260be7572"},{"slug":"sureforms","init":"sureforms\/sureforms.php","name":"SureForms","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=sureforms&_wpnonce=3298eab038"},{"slug":"variation-swatches-woo","init":"variation-swatches-woo\/variation-swatches-woo.php","name":"Variation Swatches for WooCommerce","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=variation-swatches-woo&_wpnonce=22cbe19457"},{"slug":"woo-cart-abandonment-recovery","init":"woo-cart-abandonment-recovery\/woo-cart-abandonment-recovery.php","name":"WooCommerce Cart Abandonment Recovery","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=woo-cart-abandonment-recovery&_wpnonce=8968fce33e"}]},"third_party_required_plugins":[],"update_avilable_plugins":[],"incompatible_plugins":[],"error":false}
+[18:50:34 UTC] [SUCCESS] {"permissions":{"is_readable":true,"is_writable":true,"is_wp_filesystem":true},"directory":"C:\\Users\\Alperen\\Local Sites\\titanframework\\app\\public\/wp-content\/uploads"} | Context: {"permissions":{"is_readable":true,"is_writable":true,"is_wp_filesystem":true},"directory":"C:\\Users\\Alperen\\Local Sites\\titanframework\\app\\public\/wp-content\/uploads"}
+[18:51:26 UTC] [SUCCESS] {"required_plugins":{"active":[{"slug":"woocommerce","init":"woocommerce\/woocommerce.php","name":"WooCommerce"},{"slug":"woocommerce-payments","init":"woocommerce-payments\/woocommerce-payments.php","name":"WooPayments"}],"inactive":[],"notinstalled":[{"slug":"cartflows","init":"cartflows\/cartflows.php","name":"CartFlows","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=cartflows&_wpnonce=33d1f85855"},{"slug":"ultimate-addons-for-gutenberg","init":"ultimate-addons-for-gutenberg\/ultimate-addons-for-gutenberg.php","name":"Spectra","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=ultimate-addons-for-gutenberg&_wpnonce=6260be7572"},{"slug":"sureforms","init":"sureforms\/sureforms.php","name":"SureForms","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=sureforms&_wpnonce=3298eab038"},{"slug":"variation-swatches-woo","init":"variation-swatches-woo\/variation-swatches-woo.php","name":"Variation Swatches for WooCommerce","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=variation-swatches-woo&_wpnonce=22cbe19457"},{"slug":"woo-cart-abandonment-recovery","init":"woo-cart-abandonment-recovery\/woo-cart-abandonment-recovery.php","name":"WooCommerce Cart Abandonment Recovery","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=woo-cart-abandonment-recovery&_wpnonce=8968fce33e"}]},"third_party_required_plugins":[],"update_avilable_plugins":[],"incompatible_plugins":[],"error":false} | Context: {"required_plugins":{"active":[{"slug":"woocommerce","init":"woocommerce\/woocommerce.php","name":"WooCommerce"},{"slug":"woocommerce-payments","init":"woocommerce-payments\/woocommerce-payments.php","name":"WooPayments"}],"inactive":[],"notinstalled":[{"slug":"cartflows","init":"cartflows\/cartflows.php","name":"CartFlows","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=cartflows&_wpnonce=33d1f85855"},{"slug":"ultimate-addons-for-gutenberg","init":"ultimate-addons-for-gutenberg\/ultimate-addons-for-gutenberg.php","name":"Spectra","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=ultimate-addons-for-gutenberg&_wpnonce=6260be7572"},{"slug":"sureforms","init":"sureforms\/sureforms.php","name":"SureForms","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=sureforms&_wpnonce=3298eab038"},{"slug":"variation-swatches-woo","init":"variation-swatches-woo\/variation-swatches-woo.php","name":"Variation Swatches for WooCommerce","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=variation-swatches-woo&_wpnonce=22cbe19457"},{"slug":"woo-cart-abandonment-recovery","init":"woo-cart-abandonment-recovery\/woo-cart-abandonment-recovery.php","name":"WooCommerce Cart Abandonment Recovery","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=woo-cart-abandonment-recovery&_wpnonce=8968fce33e"}]},"third_party_required_plugins":[],"update_avilable_plugins":[],"incompatible_plugins":[],"error":false}
+[18:51:29 UTC] [SUCCESS] {"required_plugins":{"active":[{"slug":"woocommerce","init":"woocommerce\/woocommerce.php","name":"WooCommerce"},{"slug":"woocommerce-payments","init":"woocommerce-payments\/woocommerce-payments.php","name":"WooPayments"}],"inactive":[],"notinstalled":[{"slug":"cartflows","init":"cartflows\/cartflows.php","name":"CartFlows","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=cartflows&_wpnonce=33d1f85855"},{"slug":"ultimate-addons-for-gutenberg","init":"ultimate-addons-for-gutenberg\/ultimate-addons-for-gutenberg.php","name":"Spectra","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=ultimate-addons-for-gutenberg&_wpnonce=6260be7572"},{"slug":"sureforms","init":"sureforms\/sureforms.php","name":"SureForms","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=sureforms&_wpnonce=3298eab038"},{"slug":"variation-swatches-woo","init":"variation-swatches-woo\/variation-swatches-woo.php","name":"Variation Swatches for WooCommerce","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=variation-swatches-woo&_wpnonce=22cbe19457"},{"slug":"woo-cart-abandonment-recovery","init":"woo-cart-abandonment-recovery\/woo-cart-abandonment-recovery.php","name":"WooCommerce Cart Abandonment Recovery","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=woo-cart-abandonment-recovery&_wpnonce=8968fce33e"}]},"third_party_required_plugins":[],"update_avilable_plugins":[],"incompatible_plugins":[],"error":false} | Context: {"required_plugins":{"active":[{"slug":"woocommerce","init":"woocommerce\/woocommerce.php","name":"WooCommerce"},{"slug":"woocommerce-payments","init":"woocommerce-payments\/woocommerce-payments.php","name":"WooPayments"}],"inactive":[],"notinstalled":[{"slug":"cartflows","init":"cartflows\/cartflows.php","name":"CartFlows","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=cartflows&_wpnonce=33d1f85855"},{"slug":"ultimate-addons-for-gutenberg","init":"ultimate-addons-for-gutenberg\/ultimate-addons-for-gutenberg.php","name":"Spectra","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=ultimate-addons-for-gutenberg&_wpnonce=6260be7572"},{"slug":"sureforms","init":"sureforms\/sureforms.php","name":"SureForms","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=sureforms&_wpnonce=3298eab038"},{"slug":"variation-swatches-woo","init":"variation-swatches-woo\/variation-swatches-woo.php","name":"Variation Swatches for WooCommerce","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=variation-swatches-woo&_wpnonce=22cbe19457"},{"slug":"woo-cart-abandonment-recovery","init":"woo-cart-abandonment-recovery\/woo-cart-abandonment-recovery.php","name":"WooCommerce Cart Abandonment Recovery","action":"http:\/\/localhost:10017\/wp-admin\/update.php?action=install-plugin&plugin=woo-cart-abandonment-recovery&_wpnonce=8968fce33e"}]},"third_party_required_plugins":[],"update_avilable_plugins":[],"incompatible_plugins":[],"error":false}
+[18:51:46 UTC] [INFO] Starting import process | Context: {"template_type":"classic","uuid":""}
+[18:51:46 UTC] [INFO] Started Import Process
+[18:51:47 UTC] [INFO] # System Details: 
+[18:51:47 UTC] [INFO] Debug Mode 		: Disabled
+[18:51:47 UTC] [INFO] Operating System 	: WINNT
+[18:51:47 UTC] [INFO] Software 		: nginx/1.26.1
+[18:51:47 UTC] [INFO] MySQL version 		: 10.6.23
+[18:51:47 UTC] [INFO] XML Reader 		: Yes
+[18:51:47 UTC] [INFO] PHP Version 		: 8.5.1
+[18:51:47 UTC] [INFO] PHP Max Input Vars 	: 4000
+[18:51:47 UTC] [INFO] PHP Max Post Size 	: 1000M
+[18:51:47 UTC] [INFO] PHP Extension GD 	: Yes
+[18:51:47 UTC] [INFO] PHP Max Execution Time 	: 1200
+[18:51:47 UTC] [INFO] Max Upload Size 	: 300 MB
+[18:51:47 UTC] [INFO] Memory Limit 		: Current memory limit 40M. We recommend setting memory to at least 64M.
+[18:51:47 UTC] [INFO] Timezone 		: 0
+[18:51:47 UTC] [INFO] 
+-----
+
+[18:51:47 UTC] [INFO] Importing Started! - 18:51:47 UTC
+[18:51:47 UTC] [INFO] ---
+
+[18:51:47 UTC] [INFO] WHY IMPORT PROCESS CAN FAIL? READ THIS - 
+[18:51:47 UTC] [INFO] https://wpastra.com/docs/?p=1314&utm_source=demo-import-panel&utm_campaign=import-error&utm_medium=wp-dashboard
+
+[18:51:47 UTC] [INFO] ---
+
+[18:51:47 UTC] [SUCCESS] Import process start flag set successfully | Context: {"template_type":"classic"}
+[18:51:50 UTC] [INFO] Image subsizes deferral enabled for import
+[18:51:54 UTC] [INFO] Image subsizes deferral enabled for import
+[18:51:55 UTC] [INFO] Checking if plugin directory clearing is needed
+[18:51:55 UTC] [INFO] Plugin install clear directory enabled - Will clear destination directory
+[18:51:55 UTC] [INFO] Plugin install clear directory options returned
+[18:52:23 UTC] [INFO] Image subsizes deferral enabled for import
+[18:52:23 UTC] [INFO] Image subsizes deferral enabled for import
+[18:52:25 UTC] [INFO] Checking if plugin directory clearing is needed
+[18:52:25 UTC] [INFO] Plugin install clear directory enabled - Will clear destination directory
+[18:52:25 UTC] [INFO] Plugin install clear directory options returned
+[18:52:27 UTC] [SUCCESS] Plugin Activated | Context: {"success":true,"status":"activated","message":"Plugin Activated"}
+[18:52:37 UTC] [INFO] Image subsizes deferral enabled for import
+[18:53:00 UTC] [INFO] Image subsizes deferral enabled for import
+[18:53:00 UTC] [INFO] Image subsizes deferral enabled for import
+[18:53:03 UTC] [INFO] Checking if plugin directory clearing is needed
+[18:53:03 UTC] [INFO] Plugin install clear directory enabled - Will clear destination directory
+[18:53:03 UTC] [INFO] Plugin install clear directory options returned
+[18:53:08 UTC] [INFO] Image subsizes deferral enabled for import
+[18:53:22 UTC] [INFO] Image subsizes deferral enabled for import
+[18:53:29 UTC] [SUCCESS] Plugin Activated | Context: {"success":true,"status":"activated","message":"Plugin Activated"}
+[18:53:30 UTC] [INFO] Image subsizes deferral enabled for import
+[18:53:33 UTC] [INFO] Image subsizes deferral enabled for import
+[18:53:34 UTC] [SUCCESS] Plugin Activated | Context: {"success":true,"status":"activated","message":"Plugin Activated"}
+[18:53:37 UTC] [INFO] Image subsizes deferral enabled for import
+[18:53:38 UTC] [SUCCESS] Plugin Activated | Context: {"success":true,"status":"activated","message":"Plugin Activated"}
+[18:53:44 UTC] [INFO] Image subsizes deferral enabled for import
+[18:53:47 UTC] [INFO] Image subsizes deferral enabled for import
+[18:53:48 UTC] [INFO] Checking if plugin directory clearing is needed
+[18:53:48 UTC] [INFO] Plugin install clear directory enabled - Will clear destination directory
+[18:53:48 UTC] [INFO] Plugin install clear directory options returned
+[18:53:58 UTC] [INFO] Image subsizes deferral enabled for import
+[18:53:59 UTC] [SUCCESS] Plugin Activated | Context: {"success":true,"status":"activated","message":"Plugin Activated"}
+[18:54:34 UTC] [INFO] Image subsizes deferral enabled for import
+[18:54:38 UTC] [INFO] Image subsizes deferral enabled for import
+[18:56:34 UTC] [INFO] Image subsizes deferral enabled for import
+[18:56:39 UTC] [INFO] Image subsizes deferral enabled for import
+[18:56:41 UTC] [INFO] Import process completed. Cleaning up log file option.
