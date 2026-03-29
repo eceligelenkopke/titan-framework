@@ -49,6 +49,11 @@ class WebDriverProvider:
             if execution_env == 'docker':
                 # If tests run on Docker
                 cls._driver = webdriver.Remote(command_executor=grid_url, options=options)
+                
+                # If tests run on GIT
+            elif os.environ.get("BASE_URL") == "http://wordpress/":
+                cls._driver = webdriver.Remote(command_executor="http://selenium-hub:4444/wd/hub", options=options)
+            
             else:
                 # If tests run on local machine
                 if 'chrome' in browser or 'ch' in browser:
