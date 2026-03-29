@@ -10,19 +10,13 @@ services:
       - "10016:3306"
     volumes:
       - ./wp_data/init.sql:/docker-entrypoint-initdb.d/init.sql
-    healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot"]
-      interval: 10s
-      timeout: 5s
-      retries: 10
 
   wordpress:
     image: wordpress:latest
     container_name: titan_wordpress
     restart: always
     depends_on:
-      db:
-        condition: service_healthy
+      - db
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: root
@@ -57,12 +51,9 @@ services:
     build: .
     container_name: titan_tests
     depends_on:
-      db:
-        condition: service_healthy
-      wordpress:
-        condition: service_started
-      chrome:
-        condition: service_started
+      - db
+      - wordpress
+      - chrome
     environment:
       - BROWSER=chrome
       - BASE_URL=http://wordpress/
@@ -75,3 +66,10 @@ services:
       - .env
     volumes:
       - ./allure_reports:/app/allure_reports
+    command: >
+      sh -c "
+      echo 'Waiting for services to initialize (60 seconds)...';
+      sleep 60;
+      echo 'Services ready, starting tests!';
+      pytest
+      "
