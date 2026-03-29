@@ -14,7 +14,6 @@ class WebDriverProvider:
                                   'headlessfirefox']
             browser = os.environ.get('BROWSER')
 
-            # Get the test environment
             execution_env = os.environ.get('EXECUTION_ENV', 'local')
 
             grid_url = "http://selenium-hub:4444/wd/hub"
@@ -29,14 +28,19 @@ class WebDriverProvider:
 
             options = None
 
-            # Common Options
             if browser in ('chrome', 'ch'):
                 options = ChOptions()
                 options.add_argument("--window-size=1920,1080")
+                options.add_argument("--no-sandbox")
+                options.add_argument("--disable-dev-shm-usage")
+                options.add_argument("--ignore-certificate-errors")
             elif browser in ('headlesschrome', 'headlessch'):
                 options = ChOptions()
                 options.add_argument("--headless")
                 options.add_argument("--window-size=1920,1080")
+                options.add_argument("--no-sandbox")
+                options.add_argument("--disable-dev-shm-usage")
+                options.add_argument("--ignore-certificate-errors")
             elif browser in ('firefox', 'ff'):
                 options = FFOptions()
                 options.add_argument("--window-size=1920,1080")
@@ -45,22 +49,17 @@ class WebDriverProvider:
                 options.add_argument("--headless")
                 options.add_argument("--window-size=1920,1080")
 
-            # Open Driver depending on test environment
             if execution_env == 'docker':
-                # If tests run on Docker
                 cls._driver = webdriver.Remote(command_executor=grid_url, options=options)
                 
-                # If tests run on GIT
             elif os.environ.get("BASE_URL") == "http://wordpress/":
                 cls._driver = webdriver.Remote(command_executor="http://selenium-hub:4444/wd/hub", options=options)
             
             else:
-                # If tests run on local machine
                 if 'chrome' in browser or 'ch' in browser:
                     cls._driver = webdriver.Chrome(options=options)
                 elif 'firefox' in browser or 'ff' in browser:
                     cls._driver = webdriver.Firefox(options=options)
-
 
             if 'headless' not in browser:
                 cls._driver.maximize_window()
