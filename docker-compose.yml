@@ -47,6 +47,15 @@ services:
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
 
+  firefox:
+    image: selenium/node-firefox:latest
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+
   tests:
     build: .
     container_name: titan_tests
@@ -54,8 +63,9 @@ services:
       - db
       - wordpress
       - chrome
+      - firefox
     environment:
-      - BROWSER=chrome
+      - BROWSER=${BROWSER:-chrome}
       - BASE_URL=http://wordpress/
       - DB_HOST=db
       - DB_PORT=3306

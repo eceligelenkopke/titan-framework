@@ -1,33 +1,25 @@
-name: Titan Framework CI/CD Pipeline
+e: Titan Framework CI
 
 on:
   push:
-    branches: [ "main", "master" ]
+    branches: [ main, master ]
   pull_request:
-    branches: [ "main", "master" ]
-  workflow_dispatch:
+    branches: [ main, master ]
 
 jobs:
-  titan-tests:
+  test:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chrome, headlesschrome, firefox, headlessfirefox]
+
+    env:
+      BROWSER: ${{ matrix.browser }}
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-      - name: Create .env file
-        run: |
-          echo "WC_KEY=${{ secrets.WC_KEY }}" >> .env
-          echo "WC_SECRET=${{ secrets.WC_SECRET }}" >> .env
-
-      - name: Run Tests via Docker Compose
-        run: |
-          docker compose up --build --abort-on-container-exit --exit-code-from tests
-
-      - name: Upload Allure Report
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: allure_reports
-          path: allure_reports/
-          retention-days: 7
+      - name: Start Infrastructure and Run Tests
+        run: docker compose up --abort-on-container-exit
