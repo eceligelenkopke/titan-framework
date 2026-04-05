@@ -21,8 +21,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Create Empty .env File
-        run: touch .env
+      - name: Inject API Credentials to .env
+        run: |
+          touch .env
+          echo "WC_KEY=${{ secrets.WC_KEY }}" >> .env
+          echo "WC_SECRET=${{ secrets.WC_SECRET }}" >> .env
 
       - name: Start Infrastructure and Run Tests
         run: sudo docker compose up --abort-on-container-exit
